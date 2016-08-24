@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员中心</title>
+    <link href="css/base_vip.css" rel="stylesheet"/>
+    <!--<link href="css/member_center.css" rel="stylesheet">-->
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/kxbdSuperMarquee.js"></script>
+    <script>
+        $(function(){
+            //左边选项按钮的展开与收起
+            var onoff=false;
+            var lefBtn=$("#fl_le_btn dd span");
+            lefBtn.click(function(){
+                if(onoff){
+                    $(this).nextAll(".dd_cont").find("a").css("display","none");
+                    onoff=!onoff
+                }else {
+                    $(this).nextAll(".dd_cont").find("a").css("display","block");
+                    onoff=!onoff
+                }
+            });
+            $('#lunbo').kxbdSuperMarquee({
+                distance:180,
+                time:2,
+                btnGo:{left:'#goL',right:'#goR'},
+                direction:'left'
+            });
+
+        })
+    </script>
+</head>
+<body>
+<div class="header">
+    <div class="inner header_content clearfix">
+        <div class="logo"><img src="images/vip_logo_02.png"/></div>
+        <a href="#" class="associator a_l pitch"><span>会员中心</span></a>
+        <a href="mypage.html" class="myhome a_l"><span>我的主页</span></a>
+        <div class="past fl">
+            <p><span>周四</span><br><span>9:00</span></p>
+            <h2>签到</h2>
+            <i>2<b>DAYS</b></i>
+        </div>
+        <div class="r_nav fr clearfix">
+            <ul>
+                <li class="name_list"><a class="name" href="#">shanshan</a><a class="quit" href="index.html">【退出】</a></li>
+                <li><a class="nav_eml" href="#">（<img class="align_middle" src="images/xinxi_05.png"/><span>15</span>）</a></li>
+                <li><a href="#">账号设置</a></li>
+                <li><a href="#">会员</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="inner main clearfix">
+    <!--fl_side左车边栏-->
+    <div class="fl_side">
+        <dl id="fl_le_btn">
+            <dt>会员中心<i class="tubiao huiyuan"></i></dt>
+            <dd class="tou">
+                <span>信息管理</span>
+                <i class="tubiao xinxi"></i>
+                <div class="dd_cont">
+                    <a href="#">发布信息</a>
+                    <a href="#">已发布信息</a>
+                    <a href="#">收件箱</a>
+                    <a href="#">发件箱</a>
+                    <a href="#">草稿箱</a>
+                </div>
+            </dd>
+            <dd>
+                <span>消息</span>
+                <i class="tubiao xiaoxi"></i>
+                <div class="dd_cont">
+                    <a href="#">@提到我的</a>
+                    <a href="#">留言板</a>
+                    <a href="#">评论</a>
+                    <a href="#">赞</a>
+                    <a href="#">私信</a>
+                </div>
+            </dd>
+            <dd>
+                <span>商业计划书</span>
+                <i class="tubiao jihua"></i>
+                <div class="dd_cont">
+                    <a href="#">我的计划书</a>
+                    <a href="#">立刻撰写</a>
+                    <a href="#">立刻上传</a>
+                    <a href="#">我的投递</a>
+                </div>
+            </dd>
+            <dd><span>我的收藏</span><i class="tubiao shoucang"></i><div class="dd_cont"></div></dd>
+            <dd><span>我的主页</span><i class="tubiao zhuye"></i><div class="dd_cont"></div></dd>
+            <dd class="xianshic"><span>账号设置</span>
+                <i class="tubiao shezhi"></i>
+                <div class="dd_cont">
+                    <a href="#">个人资料</a>
+                    <a href="#">基本信息</a>
+                    <a href="yixiang.html">投融意向</a>
+                    <a href="personal_data.html">修改LOGO</a>
+                    <a href="#">安全中心</a>
+                    <a href="xiugaimima.html">修改密码</a>
+                    <a href="Retrieve.html">找回密码</a>
+                    <a href="shoujirenzheng.html">认证信息</a>
+                    <a href="base.renzheng.html">手机</a>
+                    <a href="personal.html">隐私政策</a>
+                </div>
+            </dd>
+            <dd class="weiba"><span>会员问问</span><i class="tubiao wenwen"><div class="dd_cont"></div></i></dd>
+        </dl>
+    </div>
+    <!--section中间内容区如无右边栏加个类 section_w-->
+    <div class="section">
+        <div class="member_center">
+            <p class="p1">成功的路是孤独的，谁能够忍受孤独，谁就能享受最后的成功!</p>
+            <p class="p2">未读信息：<a href="#">收件箱<span>10</span>封</a>|<a href="#">留言<span>10</span>条</a>|<a href="#">评论<span>10</span>条</a>|<a href="#">赞<span>10</span>个</a>|<a href="#">私信<span>10</span>封</a></p>
+            <div class="mymessage">
+                <h3 class="clearfix"><span>我的信息</span><i><a href="#">管理信息</a>|<a href="#">发布信息</a></i></h3>
+                <ul>
+                    <li><a href="#"><span>【资金】</span>寻找优质项目合作</a><i>2015-12-15</i></li>
+                    <li><a href="#"><span>【资金】</span>真实靠谱大额资金寻优质融项目</a><i>2015-12-15</i></li>
+                    <li><a href="#"><span>【资金】</span>寻找优质项目合作</a><i>2015-12-15</i></li>
+                    <li><a href="#"><span>【资金】</span>50亿中投集合资本寻优质项目（直投）</a><i>2015-12-15</i></li>
+                    <li><a href="#"><span>【资金】</span>50亿中投集合资本寻优质项目</a><i>2015-12-15</i></li>
+                    <li><a href="#"><span>【资金】</span>50亿中投集合资本寻优质项目（直投)</a><i>2015-12-15</i></li>
+                </ul>
+            </div>
+            <div class="dream_conmend">
+                <ul class="see clearfix">
+                    <li>梦推荐<span></span></li>
+                    <li>看投融<span></span></li>
+                    <li>看资讯<span></span></li>
+                    <li>看日志<span></span></li>
+                </ul>
+                <div class="dis clearfix">
+                    <a href="#" class="img"><img src="images/center_03.jpg"></a>
+                    <ul class="fl">
+                        <li><a href="#">国务院力挺健康服务业力争2020年总规模逾8万</a></li>
+                        <li><a href="#">全球央行制定应急方常运作未</a></li>
+                        <li><a href="#">阿里千亿资金投式成发展方向</a></li>
+                        <li><a href="#">金融债收益率逼近五年</a></li>
+                    </ul>
+                    <a class="indream">进入梦服务<span>>></span></a>
+                </div>
+            </div>
+            <div class="state">
+                <ul class="state-tit clearfix">
+                    <li>好友动态</li>
+                    <li>最新消息</li>
+                    <li>修改订阅条件</li>
+                </ul>
+                <ul class="state-content">
+                    <li>
+                        <span><img src="images/center_07.jpg"> </span>
+                        <h4>好友林俊杰</h4>
+                        <p>广东微藻生物柴油和虾青素项目融资3亿</p>
+                        <a href="#"><i></i>进入他的主页</a>
+                    </li>
+                    <li>
+                        <span><img src="images/center_07.jpg"> </span>
+                        <h4>好友林俊杰</h4>
+                        <p>广东微藻生物柴油和虾青素项目融资3亿</p>
+                        <a href="#"><i></i>进入他的主页</a>
+                    </li>
+                    <li>
+                        <span><img src="images/center_07.jpg"> </span>
+                        <h4>好友林俊杰</h4>
+                        <p>广东微藻生物柴油和虾青素项目融资3亿</p>
+                        <a href="#"><i></i>进入他的主页</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="showplay">
+                <h3>
+                    <span>精品项目展播</span>
+                </h3>
+                <a class="left-btn" id="goL"><img src="images/center_22.jpg"> </a>
+                <a class="right-btn" id="goR"><img src="images/center_25.jpg"> </a>
+                <div id="lunbo" class="lunbo">
+                    <ul>
+                        <li><a href="#"><img src="images/center_15.jpg"></a></li>
+                        <li><a href="#"><img src="images/center_17.jpg"></a></li>
+                        <li><a href="#"><img src="images/center_19.jpg"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--fr_side右侧边栏，不要可注释-->
+    <div class="fr_side">
+        <div class="personal personal2">
+            <i class="touxiang_t" ><img src="images/vip_img_1_03.jpg"/></i>
+            <div class="personal_r">
+                <h3>shanshan</h3>
+                <ul>
+                    <li>经验：<span class="experience"><i class="price"></i><h4 class="lv">1v5</h4></span></li>
+                    <li>积分：<span>500</span></li>
+                    <li>信誉值：<span>100</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="follow">
+            <p class="bor_dt"><span>152</span><br>关注</p>
+            <p class="bor_dt"><span>633</span><br>粉丝</p>
+            <p><span>200</span><br>微博</p>
+        </div>
+        <div class="datum">
+            <ul>
+                <li>资料完整度:<span class="experience"><i class="price"></i><i class="schedule">50%</i></span></li>
+                <li>信用认证:<span class="rz"></span></li>
+                <li>信用等级:<span class="dengji"></span></li>
+            </ul>
+        </div>
+        <h3 class="title_h3">可能感兴趣的人<a href="#" class="huan">换一批</a></h3>
+        <div class="jiaguanzu">
+            <ul>
+                <li>
+                    <p class="xiaotou_r">
+                        <i class="xiaotou"><img src="images/vip_img_pic_07.jpg"/></i>
+                        <span class="xiaotou_na">张施恩</span><br>
+                        <a href="#" class="jiaguanz dis_block_img"><img src="images/vip_guanzu_11.jpg"/></a>
+                        <a href="#" class="jinru dis_block_img"><img src="images/vip_jinru_03.jpg" /></a>
+                    </p>
+                    <p class="touzi">投资方式为农林牧渔</p>
+                </li>
+                <li>
+                    <p class="xiaotou_r">
+                        <i class="xiaotou"><img src="images/vip_img_pic_07.jpg"/></i>
+                        <span class="xiaotou_na">张施恩</span><br>
+                        <a href="#" class="jiaguanz dis_block_img"><img src="images/vip_guanzu_11.jpg"/></a>
+                        <a href="#" class="jinru dis_block_img"><img src="images/vip_jinru_03.jpg" /></a>
+                    </p>
+                    <p class="touzi">投资方式为农林牧渔</p>
+                </li>
+                <li>
+                    <p class="xiaotou_r">
+                        <i class="xiaotou"><img src="images/vip_img_pic_07.jpg"/></i>
+                        <span class="xiaotou_na">张施恩</span><br>
+                        <a href="#" class="jiaguanz dis_block_img"><img src="images/vip_guanzu_11.jpg"/></a>
+                        <a href="#" class="jinru dis_block_img"><img src="images/vip_jinru_03.jpg" /></a>
+                    </p>
+                    <p class="touzi">投资方式为农林牧渔</p>
+                </li>
+                <li>
+                    <p class="xiaotou_r">
+                        <i class="xiaotou"><img src="images/vip_img_pic_07.jpg"/></i>
+                        <span class="xiaotou_na">张施恩</span><br>
+                        <a href="#" class="jiaguanz dis_block_img"><img src="images/vip_guanzu_11.jpg"/></a>
+                        <a href="#" class="jinru dis_block_img"><img src="images/vip_jinru_03.jpg" /></a>
+                    </p>
+                    <p class="touzi">投资方式为农林牧渔</p>
+                </li>
+            </ul>
+        </div>
+        <h3 class="title_h3">资金推荐<a href="#" class="huan">换一批</a></h3>
+        <div class="jiaguanzu zijin">
+            <ul>
+                <li>
+                    <p class="xiaotou_r">
+                        <i class="xiaotou"><img src="images/vip_img_pic_07.jpg"/></i>
+                        <span class="xiaotou_na"><b>资金名：</b>安徽合肥100万</span><br>
+                        <span class="xiaotou_na"><b>资金简介：</b></span><br>
+                        <span class="xiaotou_na">本身就是怀化...</span><br>
+                        <a href="#" class="jinru dis_block_img"><img src="images/vip_qukan_03.jpg" /></a>
+                    </p>
+                </li>
+                <li>
+                    <p class="xiaotou_r">
+                        <i class="xiaotou"><img src="images/vip_img_pic_07.jpg"/></i>
+                        <span class="xiaotou_na"><b>资金名：</b>安徽合肥100万</span><br>
+                        <span class="xiaotou_na"><b>资金简介：</b></span><br>
+                        <span class="xiaotou_na">本身就是怀化...</span><br>
+                        <a href="#" class="jinru dis_block_img"><img src="images/vip_qukan_03.jpg" /></a>
+                    </p>
+                </li>
+                <li>
+                    <p class="xiaotou_r">
+                        <i class="xiaotou"><img src="images/vip_img_pic_07.jpg"/></i>
+                        <span class="xiaotou_na"><b>资金名：</b>安徽合肥100万</span><br>
+                        <span class="xiaotou_na"><b>资金简介：</b></span><br>
+                        <span class="xiaotou_na">本身就是怀化...</span><br>
+                        <a href="#" class="jinru dis_block_img"><img src="images/vip_qukan_03.jpg" /></a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="inner footer_content">
+        <div class="dibu">
+            <p><a href="#">关于创业梦</a><span>|</span>
+                <a href="#">网站公告</a><span>|</span>
+                <a href="#">诚聘英才</a><span>|</span>
+                <a href="#">帮助中心</a><span>|</span>
+                <a href="#">服务中心</a><span>|</span>
+                <a href="#">联系我</a><span>|</span>
+                <a href="#">友情链接</a><span>|</span>
+                <a href="#">隐私条款</a><span>|</span>
+                <a href="#">留言反馈</a><span>|</span>
+                <a href="#">网站地图</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

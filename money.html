@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/base.css" rel="stylesheet">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/kxbdSuperMarquee.js"></script>
+    <!--<link href="css/money.css" rel="stylesheet">-->
+    <script>
+        $(function(){
+//            轮播图前面导航的显示与隐藏
+            $("#navtop").find(".list").mouseover(function(){
+                $(this).css({"background":"#fff","margin-right":-1});
+                $("#navtop").find(".fuchuang").css("display","block")
+            });
+            $("#navtop").find(".list").mouseout(function(){
+                $(this).css({"background":"","margin-right":""});
+                $("#navtop").find(".fuchuang").css("display","none")
+            });
+
+//            轮播图的js用的插件
+            $('#lunbo-img').kxbdSuperMarquee({
+                distance:561,
+                time:2,
+                navId:'#lunbo-nav',
+                direction:'left'
+            });
+//            page3的热门投资经理的左右按钮轮播
+            $('#hot-man').kxbdSuperMarquee({
+                distance:121,
+                time:2,
+                btnGo:{left:'#goL',right:'#goR'},
+                direction:'left'
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div class="top">
+    <div class="top_content inner clearfix">
+        <p>欢迎您来到创业梦!</p>
+        <ul>
+            <li><a href="userlogin.html">登陆</a>|</li>
+            <li><a href="userregister.html">注册</a>|</li>
+            <li><a href="#">网站地图</a>|</li>
+            <li><a href="#">网站导航</a>|</li>
+            <li><a  class="bz" href="#">帮助中心</a>|</li>
+            <li><h4>400-700-5286</h4></li>
+        </ul>
+    </div>
+</div>
+<div class="inner header clearfix">
+    <a class="logo fl" href="#"></a>
+    <div class="header_zh fl">
+        <div class="search fl">
+            <div class="search_ago align_center fl">
+                <a href="#">资金</a>
+                <ul>
+                    <li><a href="#">资金</a></li>
+                    <li><a href="#">资金</a></li>
+                    <li><a href="#">资金</a></li>
+                    <li><a href="#">资金</a></li>
+                    <li><a href="#">资金</a></li>
+                    <li><a href="#">资金</a></li>
+                    <li><a href="#">资金</a></li>
+                </ul>
+            </div>
+            <input class="search_txt fl" type="text" name="text" placeholder="请输入您要查找的关键词"/>
+            <input class="btn fl" type="button" name="button">
+        </div>
+        <ul  class="header_nav">
+            <li><span>热门搜索:</span></li>
+            <li><a href="#">房产</a></li>
+            <li><a class="crimson" href="#">股权转让</a></li>
+            <li><a class="crimson" href="#">资金借贷</a></li>
+            <li><a href="#">私募</a></li>
+            <li><a href="#">风险投资</a></li>
+            <li><a href="#">信托</a></li>
+        </ul>
+    </div>
+    <i class="fr"></i>
+</div>
+<div class="nav">
+    <div class="inner nav_content clearfix">
+        <a class="navigation fl" href="#"><i class="align_middle"></i>资金分类导航</a>
+        <ul class="fl">
+            <li class="hair"><a href="index.html">首页</a></li>
+            <li><a href="money.html" class="currently">找资金</a></li>
+            <li><a href="liebiao.html">找项目</a></li>
+            <li><a href="userlogin.html">我的创业梦</a></li>
+            <li><a href="financing.html">投融帮</a></li>
+            <li><a href="shujuzhongxin.html">数据中心</a></li>
+            <li><a href="imformation.html">资讯</a></li>
+            <li><a href="zijinneirong.html">文库</a></li>
+            <li class="tail"><a href="#">服务</a></li>
+        </ul>
+    </div>
+</div>
+<!--副标题有就加上-->
+<div class="nav_subhead">
+    <div class="inner nav_subhead_content">
+        <p><i class="align_middle"></i><span>您当前所在位置：</span><span class="step">首页</span>&nbsp;&gt;&nbsp;<span class="here">资金频道</span></p>
+    </div>
+</div>
+
+
+<div class="money" id="money">
+    <div class="inner">
+        <div class="page1 clearfix">
+            <div class="left fl">
+                <div class="top" id="navtop">
+                    <div class="list">
+                        <p >
+                            <span><img src="images/index-sec1-icon_03.png"> </span>
+                            <a class="dis_inblock" href="#">找项目</a>
+                            <span class="sanjiao"><img src="images/index-sec1-sanjiao_03.png"></span>
+                        </p>
+                        <ul>
+                            <li><a href="#">项目融资</a> <a href="#">政府融资</a></li>
+
+                            <li><a href="#">资产交易</a></li>
+                        </ul>
+                    </div>
+                    <div class="under"></div>
+                    <div class="list">
+                        <p>
+                            <span><img src="images/index-sec1-icon_06.png"> </span>
+                            <a href="#">找资金</a>
+                            <span class="sanjiao"><img src="images/index-sec1-sanjiao_03.png"></span>
+                        </p>
+                        <ul>
+                            <li><a href="#">股权投资</a> <a href="#">债券投资</a></li>
+
+                            <li><a href="#">BT/30T投资</a></li>
+                        </ul>
+                    </div>
+                    <div class="under"></div>
+                    <div class="list">
+                        <p>
+                            <span> <img src="images/index-sec1-icon_09.png"></span>
+                            <a href="#">服务中心</a>
+                            <span class="sanjiao"> <img src="images/index-sec1-sanjiao_03.png"></span>
+                        </p>
+                        <ul>
+                            <li><a href="#">企业黄页</a> <a href="#">认证中心</a></li>
+
+                            <li><a href="#">委托服务</a> <a href="#">项目预演</a></li>
+                            <li><a href="#">委托服务</a></li>
+                        </ul>
+                    </div>
+                    <div class="under"></div>
+                    <div class="list">
+                        <p>
+                            <span></span>
+                            <a href="#">发布信息</a>
+                            <span ></span>
+                        </p>
+                        <ul>
+                            <li><a href="#">发布资金信息</a> <a href="#">发布项目信息</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="fuchuang">
+                        这里是二级菜单，等待补充
+                    </div>
+                </div>
+                <div class="img">
+                    <a><img src="images/index-sec1img_03.png"></a>
+                </div>
+            </div>
+
+            <div class="middle fl">
+                <div class="banner">
+                    <div id="lunbo-img" class="banner-img">
+                        <ul>
+                            <li><a href="#"><img src="images/money_lunbo1.jpg" ></a></li>
+                            <li><a href="#"><img src="images/money_lunbo2.jpg" ></a></li>
+                            <li><a href="#"><img src="images/money_lunbo3.jpg" ></a></li>
+                        </ul>
+                    </div>
+                    <div class="lunbo-nav" id="lunbo-nav"></div>
+                </div>
+                <div class="bigthing">
+                    <h3>投资大事件</h3>
+                    <ul>
+                        <li style="height:98px;background: none;"><a href="#"><img src="images/money_bigthing.jpg"> </a></li>
+                        <li><a href="#">经纬中国和不公开的投资者投资</a></li>
+                        <li><a href="#">经纬中国和不公开的投资者投资</a></li>
+                        <li><a href="#">经纬中国和不公开的投资者投资</a></li>
+                        <li><a href="#">经纬中国和不公开的投资者投资</a></li>
+                        <li><a href="#">经纬中国和不公开的投资者投资</a></li>
+                        <li><a href="#">经纬中国和不公开的投资者投资</a></li>
+                        <li><a href="#">经纬中国和不公开的投资者投资</a></li>
+                        <li><a href="#">经纬中国和不公开的投资者投资</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right fl">
+                <div class="login">
+                    <a href="userlogin.html">登录</a>
+                    <a href="userregister.html" class="register">注册</a>
+                </div>
+                <div class="data-show">
+                    <h3>网站数据展台</h3>
+                    <div class="project-show">
+                        <s>项目</s>
+                        <p><i>入住项目方企业</i><span>131356</span>家</p>
+                        <p><i>优质项目信息</i><span>145412</span>家</p>
+                    </div>
+                </div>
+                <div class="send clearfix">
+                    <p>发布项目信息</p>
+                    <p>发布资金信息</p>
+                </div>
+                <div class="find">
+                    <a href="#"><img src="images/money_find.jpg"></a>
+                </div>
+                <div class="rongzi">
+                    <h3><span>融资知识</span><a href="#">更多</a></h3>
+                    <ul>
+                        <li><a href="#">广东某企业融资2亿寻找优质企业</a></li>
+                        <li><a href="#">广东某企业融资2亿寻找优质企业</a></li>
+                        <li><a href="#">广东某企业融资2亿寻找优质企业</a></li>
+                        <li><a href="#">广东某企业融资2亿寻找优质企业</a></li>
+                        <li><a href="#">广东某企业融资2亿寻找优质企业</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page2 clearfix">
+            <div class="page2-left fl">
+                <h3 class="com-title"><span>最新资金</span><a href="#">更多</a></h3>
+                <table>
+                    <tr>
+                        <th>资金编号</th>
+                        <th>资金信息</th>
+                        <th>项目行业</th>
+                        <th>投资地区</th>
+                    </tr>
+                    <tr>
+                        <td>【A4516】</td>
+                        <td><a href="#">媒体称啃下公务员这块硬骨头养老改革才能</a></td>
+                        <td><a href="#">土地协会</a></td>
+                        <td class="address"><a href="#">北京房山</a></td>
+                    </tr>
+                    <tr>
+                        <td>【A4516】</td>
+                        <td><a href="#">媒体称啃下公务员这块硬骨头养老改革才能</a></td>
+                        <td><a href="#">土地协会</a></td>
+                        <td class="address"><a href="#">北京房山</a></td>
+                    </tr>
+                    <tr>
+                        <td>【A4516】</td>
+                        <td><a href="#">媒体称啃下公务员这块硬骨头养老改革才能</a></td>
+                        <td><a href="#">土地协会</a></td>
+                        <td class="address"><a href="#">北京房山</a></td>
+                    </tr>
+                    <tr>
+                        <td>【A4516】</td>
+                        <td><a href="#">媒体称啃下公务员这块硬骨头养老改革才能</a></td>
+                        <td><a href="#">土地协会</a></td>
+                        <td class="address"><a href="#">北京房山</a></td>
+                    </tr>
+                    <tr>
+                        <td>【A4516】</td>
+                        <td><a href="#">媒体称啃下公务员这块硬骨头养老改革才能</a></td>
+                        <td><a href="#">土地协会</a></td>
+                        <td class="address"><a href="#">北京房山</a></td>
+                    </tr>
+                    <tr>
+                        <td>【A4516】</td>
+                        <td><a href="#">媒体称啃下公务员这块硬骨头养老改革才能</a></td>
+                        <td><a href="#">土地协会</a></td>
+                        <td class="address"><a href="#">北京房山</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="page2-right fr">
+                <h3 class="com-title"><span>最新加入投资经理</span><a href="#">更多</a></h3>
+                <ul class="clearfix">
+                    <li>
+                        <a href="#"><img src="images/money_page2right.jpg"> </a>
+                        <p>王先生</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/money_page2right.jpg"> </a>
+                        <p>王先生</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/money_page2right.jpg"> </a>
+                        <p>王先生</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/money_page2right.jpg"> </a>
+                        <p>王先生</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/money_page2right.jpg"> </a>
+                        <p>王先生</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/money_page2right.jpg"> </a>
+                        <p>王先生</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/money_page2right.jpg"> </a>
+                        <p>王先生</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/money_page2right.jpg"> </a>
+                        <p>王先生</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/money_page2right.jpg"> </a>
+                        <p>王先生</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="page2-banner">
+            <img src="images/money_banner1.jpg">
+        </div>
+        <div class="page3">
+            <h3 class="com-title"><span>热门投资经理</span></h3>
+            <div class="hot">
+                <a  class="left-btn" id="goL">〈</a>
+                <a  class="right-btn" id="goR">〉</a>
+
+                <div class="hot-man" id="hot-man">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#"><img src="images/money_page3.jpg"></a>
+                            <span>张红</span>
+                            <p>某金融投资公司</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/money_page3.jpg"></a>
+                            <span>王五</span>
+                            <p>某金融投资公司</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/money_page3.jpg"></a>
+                            <span>小明</span>
+                            <p>某金融投资公司</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/money_page3.jpg"></a>
+                            <span>张小</span>
+                            <p>某金融投资公司</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/money_page3.jpg"></a>
+                            <span>杨红</span>
+                            <p>某金融投资公司</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/money_page3.jpg"></a>
+                            <span>赵六</span>
+                            <p>某金融投资公司</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/money_page3.jpg"></a>
+                            <span>杨红</span>
+                            <p>某金融投资公司</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/money_page3.jpg"></a>
+                            <span>赵六</span>
+                            <p>某金融投资公司</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/money_page3.jpg"></a>
+                            <span>王二小</span>
+                            <p>某金融投资公司</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page4 clearfix">
+            <div class="page4-left fl">
+                <h3 class="com-title"><span>投资机构</span></h3>
+                <div class="page4-area clearfix">
+                    <span>地区机构</span>
+                    <div class="area">
+                        <h4>北京</h4>
+                        <ul>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                        </ul>
+                    </div>
+                    <div class="area">
+                        <h4>上海</h4>
+                        <ul>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                        </ul>
+                    </div>
+                    <div class="area">
+                        <h4>广州</h4>
+                        <ul>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page4-recommend">
+                    <span>推荐机构</span>
+                    <a href="#"><img src="images/money_page4_2.jpg"> </a>
+                    <a href="#"><img src="images/money_page4_1.jpg"> </a>
+                    <a href="#"><img src="images/money_page4_3.jpg"> </a>
+                    <a href="#"><img src="images/money_page4_4.jpg"> </a>
+                    <a href="#"><img src="images/money_page4_5.jpg"> </a>
+                    <a href="#"><img src="images/money_page4_5.jpg"> </a>
+                    <a href="#"><img src="images/money_page4_5.jpg"> </a>
+                    <a href="#"><img src="images/money_page4_4.jpg"> </a>
+                    <a href="#"><img src="images/money_page4_3.jpg"> </a>
+                    <a href="#"><img src="images/money_page4_1.jpg"> </a>
+                </div>
+                <div class="page4-area clearfix">
+                    <span class="feild">机构领域</span>
+                    <div class="area">
+                        <h4>农林渔牧</h4>
+                        <ul>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                        </ul>
+                    </div>
+                    <div class="area">
+                        <h4>冶金矿产</h4>
+                        <ul>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                        </ul>
+                    </div>
+                    <div class="area">
+                        <h4>商务贸易</h4>
+                        <ul>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                            <li><a href="#">启迪创业投资管理（北京）有</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="page4-right fr">
+                <div class="message">
+                    <h3 class="com-title"><span>推荐资金信息</span><a href="#">更多</a></h3>
+                    <ul>
+                        <li><a href="#">投资集团大额资金诚寻国内优质</a></li>
+                        <li><a href="#">投资集团大额资金诚寻国内优质</a></li>
+                        <li><a href="#">投资集团大额资金诚寻国内优质</a></li>
+                        <li><a href="#">投资集团大额资金诚寻国内优质</a></li>
+                        <li><a href="#">投资集团大额资金诚寻国内优质</a></li>
+                        <li><a href="#">投资集团大额资金诚寻国内优质</a></li>
+                        <li><a href="#">投资集团大额资金诚寻国内优质</a></li>
+                    </ul>
+                </div>
+                <div class="message">
+                    <h3 class="com-title"><span>热门资金信息</span><a href="#">更多</a></h3>
+                    <ul>
+                        <li><a href="#">投资集团大额资金诚寻国内优质</a></li>
+                        <li><a href="#">投资集团大额资金诚寻国内优质</a></li>
+                        <li><a href="#">投资集团大额资金诚寻国内优质</a></li>
+                        <li><a href="#">投资集团大额资金诚寻国内优质</a></li>
+                        <li><a href="#">投资集团大额资金诚寻国内优质</a></li>
+                        <li><a href="#">投资集团大额资金诚寻国内优质</a></li>
+                        <li><a href="#">投资集团大额资金诚寻国内优质</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="banner"><img src="images/money_page4_banner.gif"> </a>
+            </div>
+        </div>
+        <div class="page5">
+            <h3 class="com-title"><span>本地信息</span><a href="#">更多</a></h3>
+            <div class="page5-content clearfix">
+                <div class="page5-left fl">
+                    <h4><a href="#">本地资金信息</a></h4>
+                    <ul class="doll">
+                        <li><a href="#">有资金投资房地产开发项目</a> <span>2015-10-23</span></li>
+                        <li><a href="#">有资金投资房地产开发项目</a> <span>2015-10-23</span></li>
+                        <li><a href="#">有资金投资房地产开发项目</a> <span>2015-10-23</span></li>
+                        <li><a href="#">有资金投资房地产开发项目</a> <span>2015-10-23</span></li>
+                        <li><a href="#">有资金投资房地产开发项目</a> <span>2015-10-23</span></li>
+                        <li><a href="#">有资金投资房地产开发项目</a> <span>2015-10-23</span></li>
+                        <li><a href="#">有资金投资房地产开发项目</a> <span>2015-10-23</span></li>
+                    </ul>
+                </div>
+                <div class="page5-left fl">
+                    <h4><a href="#">本地项目信息</a></h4>
+                    <ul class="doll">
+                        <li><a href="#">一年完成葡萄种植基地的扩建项目</a> <span>2015-10-23</span></li>
+                        <li><a href="#">一年完成葡萄种植基地的扩建项目</a> <span>2015-10-23</span></li>
+                        <li><a href="#">一年完成葡萄种植基地的扩建项目</a> <span>2015-10-23</span></li>
+                        <li><a href="#">一年完成葡萄种植基地的扩建项目</a> <span>2015-10-23</span></li>
+                        <li><a href="#">一年完成葡萄种植基地的扩建项目</a> <span>2015-10-23</span></li>
+                        <li><a href="#">一年完成葡萄种植基地的扩建项目</a> <span>2015-10-23</span></li>
+                        <li><a href="#">一年完成葡萄种植基地的扩建项目</a> <span>2015-10-23</span></li>
+                    </ul>
+                </div>
+                <div class="page5-left fl">
+                    <h4><a href="#">本地项目信息</a></h4>
+                    <ul class="company">
+                        <li><a href="#"><img src="images/money_page4_2.jpg"> </a></li>
+                        <li><a href="#"><img src="images/money_page4_1.jpg"> </a></li>
+                        <li><a href="#"><img src="images/money_page4_3.jpg"> </a></li>
+                        <li><a href="#"><img src="images/money_page4_5.jpg"> </a></li>
+                        <li><a href="#"><img src="images/money_page4_4.jpg"> </a></li>
+                        <li><a href="#"><img src="images/money_page4_2.jpg"> </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page5-banner">
+            <a href="#"><img src="images/money_banner2.jpg"> </a>
+        </div>
+    </div>
+</div>
+
+
+<!--脚-->
+<div class="footer">
+    <div class="footer_inner">
+        <div class="inner footer_content">
+            <div class="footer_time fl">
+                <i class="footer_logo"></i>
+                <p>服务热线:<span>400-700-5286</span></p>
+                <p>工作时间:<span>9:00-18:00</span></p>
+                <!--<div class="suxian"></div>-->
+            </div>
+            <dl class="dl_1">
+                <dt><i></i><h2>用户帮助</h2></dt>
+                <dd><a href="#">帮助中心</a></dd>
+                <dd><a href="#">服务条款</a></dd>
+                <dd><a href="#">意见反馈</a></dd>
+                <dd><a href="#">网站地图</a></dd>
+            </dl>
+            <dl class="dl_2">
+                <dt><i></i><h2>网站简介</h2></dt>
+                <dd><a href="#">关于我们</a></dd>
+                <dd><a href="#">诚聘英才</a></dd>
+                <dd><a href="#">官网微博</a></dd>
+            </dl>
+            <dl class="dl_3">
+                <dt><i></i><h2>商务合作</h2></dt>
+                <dd><a href="#">友情链接</a></dd>
+                <dd><a href="#">合作条款</a></dd>
+            </dl>
+
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="inner bottom_content">
+            <p>Copyright&nbsp;&copy;2013&nbsp;创业梦(www.chuangyemeng.com)&nbsp;版权所有|京ICP备10204252号-1</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

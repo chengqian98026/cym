@@ -1,0 +1,78 @@
+/***************** 重置CSS *********************/
+body,div,i,a,p,span,b,input,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dd,dt,textarea,img{margin:0;padding:0;}
+body{font-family: Arial,"宋体";font-size:12px;color:#555555;}
+body a{color:#3c3c3c;}
+i,b{font-style: normal;}
+a,s{text-decoration:none;}
+input,textarea,img{resize: none;outline: none;border: none;}
+li{list-style: none}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+/**************** 公共组件 ***********************/
+.inner{width:972px;margin:0 auto}
+.fl{float: left}
+.fr{float: right}
+.align_center{text-align: center;}
+.align_middle{vertical-align: middle;}
+.dis_block{display:block}
+.dis_block_img img{display: block} /**** dis_block_img 这个类把图片转块 *****/
+.dis_inblock{display:inline-block}
+.border{border:1px #e0e0e0 solid;}
+.clearfix:after{content: '';display: block;height:0;clear: both;font-size:0;*zoom:1}
+/**********头部和底部********/
+body{background: #f7f7f7;}
+.top{height:54px;background: #3e3226;color:#fff;}
+.top a{color:#fff;padding:0 2px;line-height:54px;}
+.top a:hover{color:#ffc700;text-decoration: underline;}
+.top span{color:#8b8e6d;line-height:54px;padding:0 4px;}
+.top ul li{height:54px;line-height:54px;float: left;margin-right:10px;}
+.top ul li.mobile{padding-left:14px;background: url("../images/userlogin_mobile.jpg") no-repeat left center;}
+.footer{margin-top:20px;}
+.footer p.footer-nav{text-align: center;padding-top:3px;height:39px ;line-height: 39px;border-top: 1px solid #dddddd;}
+.footer p{text-align: center;}
+.footer a{padding:0 15px;}
+.footer a:hover{color:#ffc700;text-decoration: underline;}
+/******************end****************/
+
+/************注册页面*************/
+#userregister a:hover{color:#ffc700;text-decoration: underline;}
+.userregister .main{padding-top:20px;}
+.userregister .main .main-title{background:url("../images/userregister_zhanghao.jpg") no-repeat left top;height:54px; }
+.userregister .main .content{background: #fff;padding-top: 35px; font-size:14px;border: 1px solid #e4e4e4;border-top: 0;border-radius: 8px;margin-top:-9px;padding-bottom:60px;}
+.userregister .main .content .content-left{width:520px;padding:40px 0 0 60px;background:url("../images/userregister_huanying.jpg") no-repeat 60px top;border-right: 1px solid #e4e4e4; }
+.userregister .main .content .content-left p{height:36px;line-height: 36px;padding-top:5px;margin-bottom:10px;}
+.userregister .main .content .content-left span{width:60px;display: inline-block;text-align: right;}
+.userregister .main .content .content-left p input{margin-left:10px;}
+.userregister .main .content .content-left .inp input{width:234px;height:30px;border: 1px solid #d6d6d6;}
+.userregister .main .content .content-left .now_regi{width:360px;height:42px;display: inline-block;background: #963c00;text-align: center;line-height: 42px;font-size:24px;color:#fff;font-weight: bold;}
+.userregister .main .content .content-right {padding-left:55px;width:252px;}
+.userregister .main .content .content-right>p{height:28px;line-height: 28px;margin:25px 0;}
+.userregister .main .content .content-right>p a{height:26px;width:65px;display: inline-block;background: #f1f1f1;color:#00589c;text-align: center;line-height: 26px;border: 1px solid #d7d7d7;margin:0 10px;font-size: 12px;}
+.userregister .main .content .content-right ul{padding:20px 0 50px 0;}
+.userregister .main .content .content-right ul li{padding-left:30px;background: url("../images/userregister_gou.jpg") no-repeat left center;height:36px;line-height: 36px;}
+.userregister .main .content .content-right .mobile-regi p{padding-top:10px;line-height:30px;text-align: center;}
+.userregister .main .content .content-right .mobile-regi p span {color:#e4a04d;}
+.userregister .main .content .content-left .inp input.error{border:1px solid red;}
+.userregister label.error{color:red;margin-left:3px;}
+/***********end***********/
+
+/***************登陆页面*******************/
+#userlogin a:hover{color:#ffc700;text-decoration: underline;}
+.userlogin .main h1{height:71px;line-height: 71px;padding-left:7px;font-size:28px;font-weight: bold;color:#3e3224;}
+.userlogin .main .content{width:910px;border:1px solid #ededed;border-top:1px solid #ededed;border-radius:8px;padding:30px 30px 60px 30px;background: #fff;}
+.userlogin .main .content .content-top{padding-bottom:20px;border-bottom: 1px dotted #ebebeb;}
+.userlogin .main .content .login-detail{width: 300px;padding-top:50px;}
+.userlogin .main .content .login-detail h2{height:50px;line-height: 50px;color:#3e3e3e;font-size:24px;font-weight: bold;}
+.userlogin .main .content .login-detail h4{height:36px;line-height: 36px;color:#3e3e3e;font-size:12px;font-weight: bold;}
+.userlogin .main .content .login-detail input{height:30px;line-height: 30px;color:#3e3e3e;width:274px;border: 1px solid #d6d6d6;}
+.userlogin .main .content .login-detail p{margin-top:10px;}
+.userlogin .main .content .login-detail p i{margin: 0 10px 20px 0;}
+.userlogin .main .content .login-detail form .btn{width:160px;height:40px;border:1px solid #712e01;background: #963c00;display: inline-block;text-align: center;font-size: 24px;line-height:40px;color:#fff;margin-top:20px;}
+.userlogin .main .content .login-detail .checkbox{height:14px;width:14px;}
+.userlogin .main .content .content-bot {padding-top:20px;}
+.userlogin .main .content .content-bot .bot-left {padding-top:20px;width:580px;padding-left:10px;}
+.userlogin .main .content .content-bot .bot-left h3{height:36px;font-weight:bold;color:#000;line-height: 36px;padding-left:30px;background: url("../images/userlogin_wenhao.jpg") no-repeat left center;}
+.userlogin .main .content .content-bot .bot-left p{height:25px;line-height: 25px;}
+.userlogin .main .content .content-bot .bot-right{width:300px;}
+.userlogin .main .content .content-bot .bot-right p{height:36px;font-weight:bold;color:#000;line-height: 36px;}
+.userlogin .main .content .content-bot .bot-right li{float: left;margin-right:10px;}
+/*********end***************/

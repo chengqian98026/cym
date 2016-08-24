@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link href="css/user_base.css" rel="stylesheet">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.metadata.js"></script>
+    <script>
+        $(function(){
+            $("#form1").validate();
+        });
+    </script>
+</head>
+<body>
+<div class="top">
+    <div class="inner">
+        <ul class="fl">
+            <li class="mobile"><a href="#">手机版</a></li>
+            <li>欢迎来到创业梦！</li>
+            <li>请 <a href="userlogin.html">登录</a><span>|</span><a href="userregister.html">免费注册</a> </li>
+        </ul>
+        <div class="backindex fr">
+            <a href="index.html">返回首页</a><span>|</span>
+            <a href="#">帮助中心</a>
+        </div>
+    </div>
+</div>
+<div class="userregister " id="userregister">
+    <div class="main">
+        <div class="inner">
+            <div class="main-title"></div>
+            <div class="content clearfix">
+                <div class="content-left fl">
+                    <h3></h3>
+
+                    <form name="form1" id="form1">
+                        <p class="i-am">
+                            <span>我是:</span>
+                            <input type="radio" name="i-am-is" checked>资金方
+                            <input type="radio" name="i-am-is">项目方
+                            <input type="radio" name="i-am-is">投资机构
+                        </p>
+                        <p class="vip-type">
+                            <span>会员类型:</span>
+                            <input type="radio" name="vip" checked>个人
+                            <input type="radio" name="vip">企业
+                            <input type="radio" name="vip" >政府
+                            <input type="radio" name="vip" >天使
+                        </p>
+                        <p class="inp">
+                            <span>常用邮箱:</span>
+                            <input type="text" name="email1"  class="{required:true} email range">
+                        </p>
+                        <p class="inp">
+                            <span>登录密码:</span>
+                            <input type="password" name="email2" class="{required:true}" id="password1" >
+                        </p>
+                        <p class="inp">
+                            <span>确认密码:</span>
+                            <input type="password" name="email3" class="{required:true,equalTo:'#password1',messages:{equalTo:'两次密码不相同'}} ">
+                        </p>
+                        <p class="inp">
+                            <span>手机号码:</span>
+                            <input type="text" name="email4" class=" mobile required"><i></i>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="checkbox" class="{required:true,messages:{required:''}}" checked>我已认真阅读并同意创业梦的<a href="#">《服务协议》</a>
+                        </p>
+                        <input class="now_regi" type="submit" value="立即注册">
+                    </form>
+                </div>
+                <div class="content-right fl">
+                    <p>
+                        已经拥有创业梦账号？<a href="#">直接登录</a>
+                    </p>
+                    <div><img src="images/userregister_service.jpg"> </div>
+                    <ul>
+                        <li>这里有数万的投资机构和企业入驻</li>
+                        <li>这里有数万的投资机构和企业入驻</li>
+                        <li>这里有数万的投资机构和企业入驻</li>
+                        <li>这里有数万的投资机构和企业入驻</li>
+                        <li>这里有数万的投资机构和企业入驻</li>
+                    </ul>
+                    <div class="mobile-regi">
+                        <img src="images/userregister_mobile.jpg">
+                        <p>中国大陆手机用户，编辑短信<span>“CYM”</span>发送到：
+                            <span>1069099988</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="inner">
+        <p class="footer-nav">
+            <a href="#">关于我们</a>|<a href="#">联系我们</a>|<a href="#">免责声明</a>|<a href="#">帮助中心</a>|<a href="#">诚征英</a>|<a href="#">网站地图</a>|<a href="#">直接登录</a>
+        </p>
+        <p>Copyright © 2012 北京飞度网络科技有限公司 All rights reserved</p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>资金列表</title>
+    <link rel="stylesheet" href="css/base.css" type="text/css">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script>
+        $(function(){
+            $(".title li").mouseover(function(){
+                var index=$(this).index();
+                for(var i=0;i<3;i++){
+                    $(".content"+(i+1)+"").css("display","none");
+                    $(".title li:eq("+i+") a").attr("class","a"+(i+1)+"");
+                }
+                $(this).find("a").attr("class","hover"+(index+1)+"");
+                $(".content"+(index+1)+"").css("display","block");
+               $(".content"+(index+1)+"").css("opacity","0");
+               $(".content"+(index+1)+"").animate({opacity:"1"},"slow")
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="lb">
+        <div class="top">
+            <div class="top_content inner clearfix">
+                <p>欢迎您来到创业梦!</p>
+                <ul>
+                    <li><a href="userlogin.html">登陆</a>|</li>
+                    <li><a href="userregister.html">注册</a>|</li>
+                    <li><a href="#">网站地图</a>|</li>
+                    <li><a href="#">网站导航</a>|</li>
+                    <li><a  class="bz" href="#">帮助中心</a>|</li>
+                    <li><h4>400-700-5286</h4></li>
+                </ul>
+            </div>
+        </div>
+        <div class="inner header clearfix">
+            <a class="logo fl" href="#"></a>
+            <div class="header_zh fl">
+                <div class="search fl">
+                    <div class="search_ago align_center fl">
+                        <a href="#">资金</a>
+                        <ul>
+                            <li><a href="#">资金</a></li>
+                            <li><a href="#">资金</a></li>
+                            <li><a href="#">资金</a></li>
+                            <li><a href="#">资金</a></li>
+                            <li><a href="#">资金</a></li>
+                            <li><a href="#">资金</a></li>
+                            <li><a href="#">资金</a></li>
+                        </ul>
+                    </div>
+                    <input class="search_txt fl" type="text" name="text" placeholder="请输入您要查找的关键词"/>
+                    <input class="btn fl" type="button"name="button">
+                </div>
+                <ul  class="header_nav">
+                    <li><span>热门搜索:</span></li>
+                    <li><a href="#">房产</a></li>
+                    <li><a class="crimson" href="#">股权转让</a></li>
+                    <li><a class="crimson" href="#">资金借贷</a></li>
+                    <li><a href="#">私募</a></li>
+                    <li><a href="#">风险投资</a></li>
+                    <li><a href="#">信托</a></li>
+                </ul>
+            </div>
+            <i class="fr"></i>
+        </div>
+        <div class="nav">
+            <div class="inner nav_content clearfix">
+                <a class="navigation fl" href="#"><i class="align_middle"></i>资金分类导航</a>
+                <ul class="fl">
+                    <li class="hair"><a href="index.html">首页</a></li>
+                    <li><a href="money.html" >找资金</a></li>
+                    <li><a href="liebiao.html" class="currently">找项目</a></li>
+                    <li><a href="userlogin.html">我的创业梦</a></li>
+                    <li><a href="financing.html">投融帮</a></li>
+                    <li><a href="shujuzhongxin.html">数据中心</a></li>
+                    <li><a href="imformation.html" >资讯</a></li>
+                    <li><a href="zijinneirong.html">文库</a></li>
+                    <li class="tail"><a href="#">服务</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main  inner">
+            <div class="box1">
+                <div class="line l1">
+                    <p>
+                        <a href="#">投资方式:</a>
+                    </p>
+                    <ul>
+
+                        <li>
+                            <label><input type="radio" name="n">股权投资</label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="n">债券投资</label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="n">金融投资</label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="n">BT/BOT项目投资</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+                <div class="line l2">
+                    <p>
+                        <a href="#">资金主体</a>
+                    </p>
+                    <ul>
+                        <li>
+                            <label><input type="checkbox">个人资金</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox">企业资金</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox">PE投资</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox">小额投资</label>
+                        </li>
+
+                        <li>
+                            <label><input type="checkbox">个人资金</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox">企业资金</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox">PE投资</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox">小额投资</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+                <div class="line l3">
+                    <p>
+                        <a href="#">投资行业</a>
+                    </p>
+                    <ul>
+                        <li>
+                            <label><input type="checkbox">金融投资</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox">房地产</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox">能源</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox">化学化工</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox">建筑建材</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox">矿产冶金</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox">基础设施</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox">农林牧渔</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+                <div class="line l4">
+                    <p>
+                        <a href="#">其他条件</a>
+                    </p>
+                    <ul>
+
+                        <li>
+                            <select>
+                                <option>投资地区</option>
+                                <option>投资地区</option>
+                                <option>投资地区</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select>
+                                <option>投资类型</option>
+                                <option>投资类型</option>
+                                <option>投资类型</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select>
+                                <option>投资阶段</option>
+                                <option>投资阶段</option>
+                                <option>投资阶段</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select>
+                                <option>更新时间</option>
+                                <option>更新时间</option>
+                                <option>更新时间</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select>
+                                <option>会员主体</option>
+                                <option>会员主体</option>
+                                <option>会员主体</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+                <div class="line l5">
+                    <p>
+                        <a href="#">
+                            发布人
+                        </a>
+                    </p>
+                    <ul>
+
+                        <li>
+                            <label><input type="radio" name="ns">个人</label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="ns">企业</label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="ns">政府</label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="ns">委托创业梦代发</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="box2 clearfix"   >
+                <div class="left">
+                    <div class="title">
+                        <ul>
+                            <li><a class="a1 hover1" >信息列表</a></li>
+                            <li><a class="a2" >投资经理</a></li>
+                            <li><a class="a3" >投资机构</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <a class="a1" href="#">筛选条件:</a>
+                            </li>
+                            <li>
+                                <a class="a1 a2" href="#">时间</a>
+                            </li>
+                            <li>
+                                <a class="a1 a2" href="#">评论</a>
+                            </li>
+                            <li>
+                                <a class="a1 a2" href="#">浏览</a>
+                            </li>
+                            <li>
+                                <a class="a3" href="#">共<span>156234</span>条</a>
+                            </li>
+                            <li>
+                                <a class="a3" href="#">1</a>
+                            </li>
+                            <li>
+                                <a class="a3 a5"  href="#">2</a>
+                            </li>
+                            <li>
+                                <a  class="a3 a5" href="#">3</a>
+                            </li>
+                            <li>
+                                <a class="a3 a5" href="#">4</a>
+                            </li>
+                            <li>
+                                <a class="a3 a5" href="#">下一页</a>
+                            </li>
+                            <li>
+                                <a class="a3 a5" href="#">尾页</a>
+                            </li>
+                            <li>
+                                <a class="a3"  href="#">到
+                                    <input type="text">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="a3 a4" href="#">确定</a>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    <div style="display: none;" class="content1">
+                        <ul>
+                            <li>
+                                <span>
+                                    <img src="images/lb-c1-img_07.png">
+                                    <a href="#"><span>张先生</span>投资经理人</a>
+                                    <a class="as" href="#">北京互易国际投资公司</a>
+                                </span>
+                                <div class="clear"></div>
+                                <span>
+                                    <a class="ad" href="#">农林牧渔,机械机电,互联网,食品加工</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <img src="images/lb-c1-img_07.png">
+                                    <a href="#"><span>张先生</span>投资经理人</a>
+                                    <a class="as" href="#">北京互易国际投资公司</a>
+                                </span>
+                                <div class="clear"></div>
+                                <span>
+                                    <a class="ad" href="#">农林牧渔,机械机电,互联网,食品加工</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                   <img src="images/lb-c1-img_07.png">
+                                    <a href="#"><span>张先生</span>投资经理人</a>
+                                    <a class="as" href="#">北京互易国际投资公司</a>
+                                </span>
+                                <div class="clear"></div>
+                                <span>
+                                    <a class="ad" href="#">农林牧渔,机械机电,互联网,食品加工</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <img src="images/lb-c1-img_07.png">
+                                    <a href="#"><span>张先生</span>投资经理人</a>
+                                    <a class="as" href="#">北京互易国际投资公司</a>
+                                </span>
+                                <div class="clear"></div>
+                                <span>
+                                    <a href="#">农林牧渔,机械机电,互联网,食品加工</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="display: none" class="content2">
+                        <div class="cons">
+                            <ul class="zuo">
+                                <li>
+                                    <a href="#"><span class="s1">低息大额境外资金借贷</span><span class="s2">【2图】</span></a>
+                                    <a href="#">北极光创投是一家以"扶持世界级的中国企业家，培育世"</a>
+                                    <a href="#">界级的中国企业"为宗旨的风险投资机构【详细】</a>
+                                    <a href="#">投资领域：农历牧渔，加工制造，石油化工</a>
+                                </li>
+                            </ul>
+                            <ul class="you">
+                                <li>
+                                    <a href="#">四川中恒融创投资有限公司</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/lb-c2-img_03.png">
+                                        <img src="images/lb-c2-img_03.png">
+                                        <img src="images/lb-c2-img_03.png"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>
+                                    此公司已开通企业站
+                                </span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cons">
+                            <ul class="zuo">
+                                <li>
+                                    <a href="#"><span>低息大额境外资金借贷</span><span>【2图】</span></a>
+                                    <a href="#">北极光创投是一家以"扶持世界级的中国企业家，培育世"</a>
+                                    <a href="#">界级的中国企业"为宗旨的风险投资机构【详细】</a>
+                                    <a href="#">投资领域：农历牧渔，加工制造，石油化工</a>
+                                </li>
+                            </ul>
+                            <ul class="you">
+                                <li>
+                                    <a href="#">四川中恒融创投资有限公司</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/lb-c2-img_03.png">
+                                        <img src="images/lb-c2-img_03.png">
+                                        <img src="images/lb-c2-img_03.png"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>
+                                    此公司已开通企业站
+                                </span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cons">
+                            <ul class="zuo">
+                                <li>
+                                    <a href="#"><span>低息大额境外资金借贷</span><span>【2图】</span></a>
+                                    <a href="#">北极光创投是一家以"扶持世界级的中国企业家，培育世"</a>
+                                    <a href="#">界级的中国企业"为宗旨的风险投资机构【详细】</a>
+                                    <a href="#">投资领域：农历牧渔，加工制造，石油化工</a>
+                                </li>
+                            </ul>
+                            <ul class="you">
+                                <li>
+                                    <a href="#">四川中恒融创投资有限公司</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/lb-c2-img_03.png">
+                                        <img src="images/lb-c2-img_03.png">
+                                        <img src="images/lb-c2-img_03.png"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>
+                                    此公司已开通企业站
+                                </span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div  class="content3">
+                        <div class="fons">
+                            <div class="f1">
+                                <span><img src="images/lb-c3img_03.png"></span>
+                                <ul>
+                                    <li>
+                                        <a href="#">企业：天津创业投资有限公司</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">地区：<span>黑龙江</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">领域：<span>农林牧渔</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/lb-c3img2_06.png">
+                                            <img src="images/lb-c3img2_08.png">
+                                            <img src="images/lb-c3img2_09.png">
+                                            <img src="images/lb-c3img2_10.png">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                                <a class="btn b2" href="#">进入对方企业站</a>
+                                <a class="btn" href="#">投递项目</a>
+                            </div>
+                            <div class="f1">
+                                <span><img src="images/lb-c3img_03.png"></span>
+                                <ul>
+                                    <li>
+                                        <a href="#">企业：天津创业投资有限公司</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">地区：<span>黑龙江</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">领域：<span>农林牧渔</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/lb-c3img2_06.png">
+                                            <img src="images/lb-c3img2_08.png">
+                                            <img src="images/lb-c3img2_09.png">
+                                            <img src="images/lb-c3img2_10.png"></a>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                                <a class="btn b2" href="#">进入对方企业站</a>
+                                <a  class="btn"href="#">投递项目</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="c1">
+                        <a href="#">
+                            委托创业梦帮您寻找合适资金
+                        </a>
+                    </div>
+                    <div class="c2">
+                        <div class="sptop">
+                            <h2>
+                                <span class="kuai"></span>
+                                <a href="#">热门投资领域</a>
+                            </h2>
+                        </div>
+                        <ul>
+                            <li class="li1">
+                                <a class="as" href="#">领域</a>
+                                <a class="as" href="#">机构数量</a>
+                            </li>
+                            <li>
+                                <a href="#">农林牧渔</a>
+                                <a class="ad" href="#">1121    </a>
+                            </li>
+                            <li>
+                                <a href="#">农林牧渔</a>
+                                <a class="ad" href="#">1121    </a>
+                            </li>
+                            <li>
+                                <a href="#">农林牧渔</a>
+                                <a class="ad" href="#">1121    </a>
+                            </li>
+                            <li>
+                                <a href="#">农林牧渔</a>
+                                <a class="ad" href="#">1121    </a>
+                            </li>
+                            <li>
+                                <a href="#">农林牧渔</a>
+                                <a class="ad" href="#">1121    </a>
+                            </li>
+                            <li>
+                                <a href="#">农林牧渔</a>
+                                <a  class="ad" href="#">1121    </a>
+                            </li>
+                            <li>
+                                <a href="#">农林牧渔</a>
+                                <a class="ad" href="#">1121    </a>
+                            </li>
+                            <li>
+                                <a href="#">农林牧渔</a>
+                                <a class="ad" href="#">1121    </a>
+                            </li>
+                            <li>
+                                <a href="#">农林牧渔</a>
+                                <a class="ad" href="#">1121    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="c3">
+                        <img src="images/lb-rimg_21.png">
+                        <div class="bot">
+                            <ul>
+                                <li>
+                                    <a class="ac ad" href="#">我浏览过的</a>
+                                </li>
+                                <li>
+                                    <a class="ac" href="#">我浏览过的项目</a>
+                                </li>
+                                <li>
+                                    <a class="ac" href="#">我浏览过的资金信息</a>
+                                </li>
+                                <li>
+                                    <a class="ac" href="#">我浏览过的</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="clear"></div>
+        <div class="footer">
+            <div class="footer_inner">
+                <div class="inner footer_content">
+                    <div class="footer_time fl">
+                        <i class="footer_logo"></i>
+                        <p>服务热线:<span>400-700-5286</span></p>
+                        <p>工作时间:<span>9:00-18:00</span></p>
+                        <!--<div class="suxian"></div>-->
+                    </div>
+                    <dl class="dl_1">
+                        <dt><i></i><h2>用户帮助</h2></dt>
+                        <dd><a href="#">帮助中心</a></dd>
+                        <dd><a href="#">服务条款</a></dd>
+                        <dd><a href="#">意见反馈</a></dd>
+                        <dd><a href="#">网站地图</a></dd>
+                    </dl>
+                    <dl class="dl_2">
+                        <dt><i></i><h2>网站简介</h2></dt>
+                        <dd><a href="#">关于我们</a></dd>
+                        <dd><a href="#">诚聘英才</a></dd>
+                        <dd><a href="#">官网微博</a></dd>
+                    </dl>
+                    <dl class="dl_3">
+                        <dt><i></i><h2>商务合作</h2></dt>
+                        <dd><a href="#">友情链接</a></dd>
+                        <dd><a href="#">合作条款</a></dd>
+                    </dl>
+
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="inner bottom_content">
+                    <p>Copyright&nbsp;&copy;2013&nbsp;创业梦(www.chuangyemeng.com)&nbsp;版权所有|京ICP备10204252号-1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

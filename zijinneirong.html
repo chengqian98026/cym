@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>金融中心</title>
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script>
+        $(function(){
+            $("#btn").click(function(){
+                if( !$(".inputra1").prop("checked") && !$(".inputra2").prop("checked")){
+                    alert("请选择是否公开评论")
+                }else{
+                    if($("#ta").val().length<15){
+                        alert("评论不能少于15字");
+                    }else if($("#ta").val().length==0){
+                        alert("评论不能为空");
+                    }else{
+                        alert("发表成功");
+                        $("#ta").val('');
+                    }
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="zijin">
+    <div class="top">
+        <div class="top_content inner clearfix">
+            <p>欢迎您来到创业梦!</p>
+            <ul>
+                <li><a href="userlogin.html">登陆</a>|</li>
+                <li><a href="userregister.html">注册</a>|</li>
+                <li><a href="#">网站地图</a>|</li>
+                <li><a href="#">网站导航</a>|</li>
+                <li><a  class="bz" href="#">帮助中心</a>|</li>
+                <li><h4>400-700-5286</h4></li>
+            </ul>
+        </div>
+    </div>
+    <div class="inner header clearfix">
+        <a class="logo fl" href="#"></a>
+        <div class="header_zh fl">
+            <div class="search fl">
+                <div class="search_ago align_center fl">
+                    <a href="#">资金</a>
+                    <ul>
+                        <li><a href="#">资金</a></li>
+                        <li><a href="#">资金</a></li>
+                        <li><a href="#">资金</a></li>
+                        <li><a href="#">资金</a></li>
+                        <li><a href="#">资金</a></li>
+                        <li><a href="#">资金</a></li>
+                        <li><a href="#">资金</a></li>
+                    </ul>
+                </div>
+                <input class="search_txt fl" type="text" name="text" placeholder="请输入您要查找的关键词"/>
+                <input class="btn fl" type="button"name="button">
+            </div>
+            <ul  class="header_nav">
+                <li><span>热门搜索:</span></li>
+                <li><a href="#">房产</a></li>
+                <li><a class="crimson" href="#">股权转让</a></li>
+                <li><a class="crimson" href="#">资金借贷</a></li>
+                <li><a href="#">私募</a></li>
+                <li><a href="#">风险投资</a></li>
+                <li><a href="#">信托</a></li>
+            </ul>
+        </div>
+        <i class="fr"></i>
+    </div>
+    <div class="nav">
+        <div class="inner nav_content clearfix">
+            <a class="navigation fl" href="#"><i class="align_middle"></i>资金分类导航</a>
+            <ul class="fl">
+                <li class="hair"><a href="index.html">首页</a></li>
+                <li><a href="money.html" >找资金</a></li>
+                <li><a href="liebiao.html">找项目</a></li>
+                <li><a href="userlogin.html">我的创业梦</a></li>
+                <li><a href="financing.html">投融帮</a></li>
+                <li><a href="shujuzhongxin.html">数据中心</a></li>
+                <li><a href="imformation.html" >资讯</a></li>
+                <li><a href="zijinneirong.html" class="currently">文库</a></li>
+                <li class="tail"><a href="#">服务</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--副标题有就加上-->
+    <div class="nav_subhead">
+        <div class="inner nav_subhead_content">
+            <p><i class="align_middle"></i><span>您当前所在位置：</span><span class="step">首页</span>&nbsp;&gt;&nbsp;<span class="here">资金信息</span></p>
+        </div>
+    </div>
+    <div class="main inner">
+        <div class="main-left">
+            <div class="he">
+                <h2>
+                    <a href="#">
+                    大额优质资金找指头项目
+                    </a>
+                </h2>
+            </div>
+            <div class="text1">
+                <p>
+                    <a href="#">已有676人参与</a>
+                    <a href="#"><span>我要评论</span></a>
+                </p>
+                <ul class="l">
+                    <li><a href="#">收藏此信息</a></li><li><a href="#">丨</a></li><li><a href="#">打印该信息</a></li><li><a href="#">丨</a></li>
+                    <li><a href="#">信息管理</a></li><li><a href="#">丨</a></li><li><a href="#">举报</a></li>
+                </ul>
+                <ul class="r">
+                    <li>
+                        <a href="#"><img src="images/zijin-t1-img_03.png"></a><a href="#">分享到</a><a href="#"><img src="images/zijin-t1-img_05.png">
+                    </a><a href="#"><img src="images/zijin-t1-img_07.png"></a><a href="#"><img src="images/zijin-t1-img_09.png"></a><a href="#"><img src="images/zijin-t1-img_11.png"></a>
+                    </li>
+                    <li>
+
+                        <a class="se" href="#">
+                            <span class="sanjiao">
+                                <img src="images/zijin-t1-sanjiao_14.png">
+                            </span>
+                            1
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="text2">
+                <p>
+                    <a href="#"></a>
+                    <a class="as" href="#"></a>
+                </p>
+                <p>
+                    <a href="#">信息名称：<span>涂料技术转让</span></a>
+                    <a class="as" href="#">投资区域：<span>全国</span></a>
+                </p>
+                <p>
+                    <a href="#">信息名称：<span>涂料技术转让</span></a>
+                    <a class="as" href="#">投资区域：<span>全国</span></a>
+                </p>
+                <p>
+                    <a href="#">信息名称：<span>涂料技术转让</span></a>
+                    <a class="as" href="#">投资区域：<span>全国</span></a>
+                </p>
+            </div>
+            <div class="text3">
+                <h2><a href="#">
+                    资金内容
+                </a></h2>
+                <p >
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本单位是一家专业从事项目投融资服务、资本运营、国际商务合作的金融服务公司.资金来源除集团自有资金之外，多年来与国内外各投资财团、金融机构、国有银行、各大风险投资商保持紧密合作，为他们选择切实可行的项目进行风险投资。
+
+                    公司具有丰富的投融资策划、投资管理、企业发展顾问等金融服务的运作经验，主要管理层均长期从事金融、投资公司的经营与管理。既有各自的专业背景和相关行业的运作经验，又熟悉投资融资业务，并与国内外多家上市公司和国际专业投资机构建立了长期合作关系，也是一些境外投资机构在中国大陆的战略合作伙伴。依靠专业的人才队伍、专业的精神和专业的技能以及深层次的公共关系，为客户提供优质、完善、一站式的投融资服务。作为专业解决各类金融问题的投融资机构，我们拥有资本市场运作的丰富经验，与国内近百家金融机构、中外银行及知名企业保持了良好的合作关系。公司设有专门的项目研究评审部，对投融资市场进行系统的研究，为符合国家产业政策，产品优势明显、市场前景广阔的企业开展信用担保及投资融资服务，以缓解企业“贷款难”，“融资难”的矛盾，促进资金与项目的对接，提高资源配置效率，推进社会信用体系建设，为市场经济和社会发展服务，使企业在最短的时间内解决各种资金问题。同时，针对投资机构的投资目标和发展战略，以及对项目的具体需求，帮助他们寻找和选择最合适的企业和项目，从而实现多方共赢的战略目标。
+                </p >
+                <span class="st">
+                    进入发布人主页查看更多信息
+                </span>
+            </div>
+            <div class="text4">
+                <p>
+                    <a href="#"><span class="sy">上一篇：</span>证券业项目承揽灰色地带曝光  介绍费攀升诱发受贿</a>
+                    <a class="se" href="#">已有576人关注此消息</a>
+                </p>
+                <span></span>
+                <p class="ps">
+                    <a href="#"><span class="sy">下一篇：</span>KKR注资青岛海尔引热议  改革举步维艰</a>
+                </p>
+                <ul class="r">
+                    <li>
+                        <a href="#"><img src="images/zijin-t1-img_03.png"></a><a href="#">分享到</a><a href="#"><img src="images/zijin-t1-img_05.png">
+                    </a><a href="#"><img src="images/zijin-t1-img_07.png"></a><a href="#"><img src="images/zijin-t1-img_09.png"></a><a href="#"><img src="images/zijin-t1-img_11.png"></a>
+                    </li>
+                    <li>
+
+                        <a class="se" href="#">
+                            <span class="sanjiao">
+                                <img src="images/zijin-t1-sanjiao_14.png">
+                            </span>
+                            1
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="text5">
+                <ul>
+                    <li>
+                        <a href="#">收藏此信息</a>
+                    </li>
+                    <li>
+                        <a href="#">打印该信息</a>
+                    </li>
+                    <li>
+                        <a href="#">赞</a>
+                    </li>
+                    <li>
+                        <a href="#">信息管理</a>
+                    </li>
+                    <li>
+                        <a href="#">举报</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="text6">
+                <p>
+                    <a class="a1" href="#">企业站</a>
+                    <a href="#">对方并没有开通企业站</a>
+                    <a href="#">什么是企业站?</a>
+                    <a href="#">为什么要开通企业站?</a>
+                </p>
+            </div>
+            <div class="text7">
+               <p >
+                   <a href="#">相关图片</a>
+               </p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/zijin-t7img_03.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/zijin-t7img_05.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/zijin-t7img_07.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/zijin-t7img_09.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="text7">
+                <p >
+                    <a href="#">需要提供的资料(包含复印件)</a>
+                </p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/zijin-t8img_16.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/zijin-t8img_18.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/zijin-t8img_20.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/zijin-t8img_22.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="text9">
+                <p>
+                    <a href="#">用户评论</a>
+                </p>
+                <ul>
+                    <li>
+                        <img src="images/zijin-t8-humen_29.png">
+                        <a href="#">评论会员:<span class="s1">李先生</span></a>
+                        <a href="#">评论内容<span  class="s2">内容仅发布信息者可见(举例)</span></a>
+                        <a class="as" href="#">了解他
+                        </a>
+                    </li>
+                    <div class="clear"></div>
+                    <li>
+                        <img src="images/zijin-t8-humen_29.png">
+                        <a href="#">评论会员:<span  class="s1">李先生</span></a>
+                        <a href="#">评论内容<span  class="s2">内容仅发布信息者可见(举例)</span></a>
+                        <a class="as" href="#">了解他
+                        </a>
+                    </li>
+                    <div class="clear"></div>
+                    <li>
+                        <img src="images/zijin-t8-humen_29.png">
+                        <a href="#">评论会员:<span  class="s1">李先生</span></a>
+                        <a href="#">评论内容<span  class="s2">内容仅发布信息者可见(举例)</span></a>
+                        <a class="as" href="#">了解他
+                        </a>
+
+                    </li>
+                </ul>
+
+            </div>
+            <div class="clear"></div>
+            <div class="text10">
+
+                <p>
+                    <a href="#">我要留言</a>
+                </p>
+                <div class="list">
+                    <span>
+                        <a >
+                            <img src="images/zijin-t10-img_37.png">
+                        </a>
+                        <a >
+                            <textarea id="ta" style=""></textarea>
+                        </a>
+                    </span>
+                </div>
+                <div class="fr">
+                    <ul>
+                        <li>
+                            (请文明发言，并遵守相关规定)
+                        </li>
+                        <li>
+                            <input   class="inputra1" name="f" type="radio">公开
+                        </li>
+                        <li>
+                            <input    class="inputra2" name="f" type="radio">仅对方可看
+                        </li>
+                    </ul>
+                </div>
+                <button  id="btn" type="button">我要评论</button>
+            </div>
+            <div class="clear"></div>
+            <div class="text11">
+                <ul class="l">
+                    <li>
+                        <h2><a href="#">看过此信息的还看过</a></h2>
+                    </li>
+                    <li>
+                        <a href="#">雅培中国再现贿赂风波 13位医生涉嫌受贿</a>
+                    </li>
+                    <li>
+                        <a href="#">一线城市楼市成交回升：住建部研究调控重庆长</a>
+                    </li>
+                    <li>
+                        <a href="#">高速成长却连续亏损盛大文学赴美重启IP</a>
+                    </li>
+                    <li>
+                        <a href="#">两大石油集团收紧外采渠道称油品没问题</a>
+                    </li>
+                    <li>
+                        <a href="#">两新股再掀“炒新潮”中科金财首日大涨8</a>
+                    </li>
+                </ul>
+                <ul class="l">
+                    <li>
+                        <h2><a href="#">看过此信息的还看过</a></h2>
+                    </li>
+                    <li>
+                        <a href="#">雅培中国再现贿赂风波 13位医生涉嫌受贿</a>
+                    </li>
+                    <li>
+                        <a href="#">一线城市楼市成交回升：住建部研究调控重庆长</a>
+                    </li>
+                    <li>
+                        <a href="#">高速成长却连续亏损盛大文学赴美重启IP</a>
+                    </li>
+                    <li>
+                        <a href="#">两大石油集团收紧外采渠道称油品没问题</a>
+                    </li>
+                    <li>
+                        <a href="#">两新股再掀“炒新潮”中科金财首日大涨8</a>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="clear"></div>
+            <div class="text12">
+                <ul>
+                    <li>
+                        1<a href="#">
+                          与对方取得联系时，请先声明来自“国际资金项目网”
+                        </a>
+                    </li>
+                    <li>
+                        2<a href="#">
+                        以上言论仅代表发布者个人观点，不代表本站立场
+                    </a>
+                    </li>
+                    <li>
+                        3<a href="#">
+                        免责声明：本站展示信息均有会员个人提供，内容的真实度，准确性与合法性会员自行负责
+                    </a>
+                    </li>
+                    <li>
+                        4<a href="#">
+                        为了您能获得准备，更真实的信息，请优先选择认证会员
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-right">
+            <div class="t1">
+                <ul>
+                    <li>
+                        <img class="img" src="images/zijin-rt1img1_03.png">
+                        <span class="sp" href="#">
+                            李先生:
+                        </span>
+                        <a class="sp" href="#">
+                            普通会员
+                        </a>
+                    </li>
+                    <div class="clear"></div>
+                    <li>
+                        <span>企业:</span>
+                        <a href="#">北京互易国际投资有限公司</a>
+                    </li>
+                    <li>
+                        <span>地区:</span>
+                        <a href="#">北京</a>
+                    </li>
+                    <li>
+                        <span class="sd">认证信息:</span>
+                        <img class="ss" src="images/zijin-rt1-img_03.png">
+                        <img class="ss" src="images/zijin-rt1-img_04.png">
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+
+                <p class="btn1">
+                    <a href="#">
+                        进入对方个人主页查看更多资料
+                    </a>
+                </p>
+            </div>
+            <div class="fo">
+                <p>
+                    <a href="#">与他交换名片</a>
+                </p>
+                <ul>
+                    <li>
+                        称呼：<input type="text">
+                    </li>
+                    <li>
+                        手机：<input type="text">
+                    </li>
+                </ul>
+                <p class="ac">
+                    <a class="acc" href="#">
+                        交换名片
+                        <img src="images/zijin-sdsanjiao_14.png">
+                    </a>
+                </p>
+            </div>
+            <div class="list">
+                <div class="sptop">
+                    <h2>
+                        <span class="kuai"></span>
+                        <a href="#">浏览该项目会员</a>
+                    </h2>
+                </div>
+                <ul class="u1">
+                    <li>
+                        <a href="#">
+                            <img src="images/zijin-person_03.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/zijin-person_05.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/zijin-person_07.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/zijin-person_12.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/zijin-person_13.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/zijin-person_15.png">
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="clear"></div>
+            <div class="list">
+                <div class="sptop">
+                    <h2>
+                        <span class="kuai"></span>
+                        <a href="#">您浏览过的项目</a>
+                    </h2>
+                </div>
+                <ul class="u2">
+                    <li>
+                        <span>年产200万平方米节能环保建筑</span>
+                        <a class="a1" href="#">债券融资</a>
+                        <a href="#">北京房山</a>
+                    </li>
+                    <li>
+                        <span>年产200万平方米节能环保建筑</span>
+                        <a class="a1" href="#">债券融资</a>
+                        <a href="#">北京房山</a>
+                    </li>
+                    <li>
+                        <span>年产200万平方米节能环保建筑</span>
+                        <a class="a1" href="#">债券融资</a>
+                        <a href="#">北京房山</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <!---->
+    <!--脚-->
+    <div class="footer">
+        <div class="footer_inner">
+            <div class="inner footer_content">
+                <div class="footer_time fl">
+                    <i class="footer_logo"></i>
+                    <p>服务热线:<span>400-700-5286</span></p>
+                    <p>工作时间:<span>9:00-18:00</span></p>
+                    <!--<div class="suxian"></div>-->
+                </div>
+                <dl class="dl_1">
+                    <dt><i></i><h2>用户帮助</h2></dt>
+                    <dd><a href="#">帮助中心</a></dd>
+                    <dd><a href="#">服务条款</a></dd>
+                    <dd><a href="#">意见反馈</a></dd>
+                    <dd><a href="#">网站地图</a></dd>
+                </dl>
+                <dl class="dl_2">
+                    <dt><i></i><h2>网站简介</h2></dt>
+                    <dd><a href="#">关于我们</a></dd>
+                    <dd><a href="#">诚聘英才</a></dd>
+                    <dd><a href="#">官网微博</a></dd>
+                </dl>
+                <dl class="dl_3">
+                    <dt><i></i><h2>商务合作</h2></dt>
+                    <dd><a href="#">友情链接</a></dd>
+                    <dd><a href="#">合作条款</a></dd>
+                </dl>
+
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="inner bottom_content">
+                <p>Copyright&nbsp;&copy;2013&nbsp;创业梦(www.chuangyemeng.com)&nbsp;版权所有|京ICP备10204252号-1</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
